@@ -26,7 +26,7 @@ Il faut Python 3.10 ou plus, Stockfish, et MySQL ou MariaDB.
 ```bash
 sudo apt install stockfish mariadb-server   # Debian, Ubuntu, Kali
 
-git clone https://github.com/<toi>/chess-review.git
+git clone https://github.com/ThierryMeyeul/chess-review.git
 cd chess-review
 python3 -m venv .venv
 bash scripts/install.sh
