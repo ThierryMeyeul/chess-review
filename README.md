@@ -4,7 +4,7 @@ Application de bureau pour analyser ses parties d'échecs avec Stockfish, en
 français. Récupère les parties depuis chess.com, les classe coup par coup,
 et conserve les analyses dans MySQL pour ne jamais recalculer deux fois.
 
-![Capture](assets/icon.svg)
+![Capture](assets/icon.sg)
 
 ## Ce qu'elle fait
 
