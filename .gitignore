@@ -1,0 +1,41 @@
+# --- Secrets -----------------------------------------------------------
+# .env contient les identifiants MySQL. Sa présence dans le dépôt serait
+# irrécupérable : une fois poussé, un secret doit être considéré comme
+# compromis même après suppression, l'historique Git le conservant.
+.env
+.env.*
+!.env.example
+
+# --- Environnement Python ----------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Ressources téléchargées -------------------------------------------
+# Rien de tout cela n'est produit par le projet : ce sont des ressources
+# tierces récupérées par les scripts, avec leurs licences propres. Les
+# versionner reviendrait à les redistribuer.
+assets/pieces/
+assets/badges/
+assets/sounds/
+data/openings/
+data/games/
+
+# L'icône PNG se régénère avec scripts/make_icon.py ; seul le SVG source
+# est suivi.
+assets/icon-*.png
+
+# --- Divers -------------------------------------------------------------
+*.log
+*.sqlite
+*.db
+.DS_Store
+.idea/
+.vscode/

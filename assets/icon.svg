@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="piece" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#FCFCF6"/>
+      <stop offset="1" stop-color="#DEDECF"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.34"/>
+    </radialGradient>
+    <clipPath id="coins">
+      <rect width="256" height="256" rx="52" ry="52"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#coins)">
+    <rect width="256" height="256" fill="#6E8F4E"/>
+    <g fill="#E9EBD2">
+      <rect x="0" y="0" width="32" height="32"/>
+      <rect x="64" y="0" width="32" height="32"/>
+      <rect x="128" y="0" width="32" height="32"/>
+      <rect x="192" y="0" width="32" height="32"/>
+      <rect x="32" y="32" width="32" height="32"/>
+      <rect x="96" y="32" width="32" height="32"/>
+      <rect x="160" y="32" width="32" height="32"/>
+      <rect x="224" y="32" width="32" height="32"/>
+      <rect x="0" y="64" width="32" height="32"/>
+      <rect x="64" y="64" width="32" height="32"/>
+      <rect x="128" y="64" width="32" height="32"/>
+      <rect x="192" y="64" width="32" height="32"/>
+      <rect x="32" y="96" width="32" height="32"/>
+      <rect x="96" y="96" width="32" height="32"/>
+      <rect x="160" y="96" width="32" height="32"/>
+      <rect x="224" y="96" width="32" height="32"/>
+      <rect x="0" y="128" width="32" height="32"/>
+      <rect x="64" y="128" width="32" height="32"/>
+      <rect x="128" y="128" width="32" height="32"/>
+      <rect x="192" y="128" width="32" height="32"/>
+      <rect x="32" y="160" width="32" height="32"/>
+      <rect x="96" y="160" width="32" height="32"/>
+      <rect x="160" y="160" width="32" height="32"/>
+      <rect x="224" y="160" width="32" height="32"/>
+      <rect x="0" y="192" width="32" height="32"/>
+      <rect x="64" y="192" width="32" height="32"/>
+      <rect x="128" y="192" width="32" height="32"/>
+      <rect x="192" y="192" width="32" height="32"/>
+      <rect x="32" y="224" width="32" height="32"/>
+      <rect x="96" y="224" width="32" height="32"/>
+      <rect x="160" y="224" width="32" height="32"/>
+      <rect x="224" y="224" width="32" height="32"/>
+    </g>
+
+    <!-- Assombrissement des bords : le damier reste lisible en périphérie
+         mais cesse de concurrencer la pièce au centre. -->
+    <rect width="256" height="256" fill="url(#vignette)"/>
+
+    <g transform="translate(7.0 13.5) scale(5.5)">
+      <!-- Ombre portée : mêmes tracés, décalés, avant la pièce. -->
+      <g transform="translate(0.7 1.1)" fill="#101A0B" opacity="0.32"
+         stroke="#101A0B" stroke-opacity="0.32" stroke-width="0.72"
+         stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18"/>
+        <path d="M 24,18 C 24.38,20.91 18.45,25.37 16,27 C 13,29 13.18,31.34 11,31 C 9.958,30.06 12.41,27.96 11,28 C 10,28 11.19,29.23 10,30 C 9,30 5.997,31 6,26 C 6,24 12,14 12,14 C 12,14 13.89,12.1 14,10.5 C 13.27,9.506 13.5,8.5 13.5,7.5 C 14.5,6.5 16.5,10 16.5,10 L 18.5,10 C 18.5,10 19.28,8.008 21,7 C 22,7 22,10 22,10"/>
+      </g>
+
+      <g fill="url(#piece)" stroke="#26331B" stroke-width="0.72"
+         stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 22,10 C 32.5,11 38.5,18 38,39 L 15,39 C 15,30 25,32.5 23,18"/>
+        <path d="M 24,18 C 24.38,20.91 18.45,25.37 16,27 C 13,29 13.18,31.34 11,31 C 9.958,30.06 12.41,27.96 11,28 C 10,28 11.19,29.23 10,30 C 9,30 5.997,31 6,26 C 6,24 12,14 12,14 C 12,14 13.89,12.1 14,10.5 C 13.27,9.506 13.5,8.5 13.5,7.5 C 14.5,6.5 16.5,10 16.5,10 L 18.5,10 C 18.5,10 19.28,8.008 21,7 C 22,7 22,10 22,10"/>
+      </g>
+      <path d="M 9.5 25.5 A 0.5 0.5 0 1 1 8.5,25.5 A 0.5 0.5 0 1 1 9.5 25.5 z" fill="#26331B" stroke="#26331B"
+            stroke-width="0.72" stroke-linejoin="round"/>
+      <path d="M 15 15.5 A 0.5 1.5 0 1 1 14,15.5 A 0.5 1.5 0 1 1 15 15.5 z" fill="#26331B" stroke="#26331B"
+            stroke-width="0.72" stroke-linejoin="round"
+            transform="rotate(30 14.5 15.5)"/>
+    </g>
+
+    <rect x="2" y="2" width="252" height="252" rx="50" ry="50"
+          fill="none" stroke="#3C5029" stroke-width="4" stroke-opacity="0.55"/>
+  </g>
+</svg>
